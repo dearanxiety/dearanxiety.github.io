@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url=/support/">
+  <link rel="canonical" href="https://dearanxiety.github.io/support/">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Support - DearAnxiety</title>
+</head>
+<body>
+  <main>
+    <p>
+      Support has moved to
+      <a id="moved-link" href="/support/">dearanxiety.github.io/support/</a>.
+    </p>
+    <footer>DearAnxiety is developed and operated by Kunwoo Yoon. © 2026 Kunwoo Yoon.</footer>
+  </main>
+  <script>
+    const destination = "/support/" + window.location.search + window.location.hash;
+    document.getElementById("moved-link").href = destination;
+    window.location.replace(destination);
+  </script>
+</body>
+</html>

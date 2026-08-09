@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for DearAnxiety, a private app that helps you manage your anxiety.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://anxious-cat-support-api-883555919592.us-central1.run.app; img-src 'self'; style-src 'self'; script-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Support - DearAnxiety</title>
+  <link rel="canonical" href="https://dearanxiety.github.io/support/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img class="cat-mark" src="/anxious-cat-icon.png" alt="">
+      <h1>Support</h1>
+    </header>
+
+    <p class="lede">
+      Tell us what went wrong, ask a question, or suggest an improvement.
+      Do not include anxiety journal details, photos, or voice notes.
+    </p>
+
+    <form class="support-form panel" id="contact" novalidate>
+      <div class="support-grid">
+        <label class="support-field support-field-wide">
+          <span>What do you need help with?</span>
+          <select name="category" required>
+            <option value="">Choose one</option>
+            <option value="problem">Something is not working</option>
+            <option value="question">I have a question</option>
+            <option value="idea">I have an idea</option>
+            <option value="privacy">Privacy question</option>
+            <option value="other">Something else</option>
+          </select>
+        </label>
+
+        <label class="support-field">
+          <span>Reply email <small>(optional)</small></span>
+          <input
+            name="reply_email"
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            maxlength="254"
+            placeholder="you@example.com"
+          >
+        </label>
+
+        <label class="support-field">
+          <span>iPhone model <small>(optional)</small></span>
+          <select
+            name="device"
+          >
+            <option value="">Choose one</option>
+            <option value="Not sure">Not sure</option>
+            <optgroup label="iPhone 17 series">
+              <option value="iPhone 17 Pro Max">iPhone 17 Pro Max</option>
+              <option value="iPhone 17 Pro">iPhone 17 Pro</option>
+              <option value="iPhone Air">iPhone Air</option>
+              <option value="iPhone 17">iPhone 17</option>
+              <option value="iPhone 17e">iPhone 17e</option>
+            </optgroup>
+            <optgroup label="iPhone 16 series">
+              <option value="iPhone 16 Pro Max">iPhone 16 Pro Max</option>
+              <option value="iPhone 16 Pro">iPhone 16 Pro</option>
+              <option value="iPhone 16 Plus">iPhone 16 Plus</option>
+              <option value="iPhone 16">iPhone 16</option>
+              <option value="iPhone 16e">iPhone 16e</option>
+            </optgroup>
+            <optgroup label="iPhone 15 series">
+              <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+              <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+              <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+              <option value="iPhone 15">iPhone 15</option>
+            </optgroup>
+            <optgroup label="iPhone 14 series">
+              <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+              <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+              <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+              <option value="iPhone 14">iPhone 14</option>
+            </optgroup>
+            <optgroup label="iPhone 13 series">
+              <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+              <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+              <option value="iPhone 13 mini">iPhone 13 mini</option>
+              <option value="iPhone 13">iPhone 13</option>
+            </optgroup>
+            <optgroup label="iPhone 12 series">
+              <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+              <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+              <option value="iPhone 12 mini">iPhone 12 mini</option>
+              <option value="iPhone 12">iPhone 12</option>
+            </optgroup>
+            <optgroup label="Older supported iPhones">
+              <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+              <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+              <option value="iPhone 11">iPhone 11</option>
+              <option value="iPhone XS Max">iPhone XS Max</option>
+              <option value="iPhone XS">iPhone XS</option>
+              <option value="iPhone XR">iPhone XR</option>
+              <option value="iPhone SE (3rd generation)">iPhone SE (3rd generation)</option>
+              <option value="iPhone SE (2nd generation)">iPhone SE (2nd generation)</option>
+            </optgroup>
+            <option value="Other iPhone">Other iPhone</option>
+          </select>
+        </label>
+
+        <label class="support-field support-field-wide">
+          <span>What were you trying to do?</span>
+          <textarea
+            name="trying"
+            rows="3"
+            maxlength="600"
+            required
+          ></textarea>
+        </label>
+
+        <label class="support-field support-field-wide">
+          <span>What happened instead?</span>
+          <textarea
+            name="happened"
+            rows="4"
+            maxlength="1000"
+            required
+          ></textarea>
+        </label>
+
+        <label class="support-field support-field-wide">
+          <span>What would make this easier? <small>(optional)</small></span>
+          <textarea
+            name="easier"
+            rows="3"
+            maxlength="600"
+          ></textarea>
+        </label>
+
+        <label class="support-field">
+          <span>iOS version <small>(optional)</small></span>
+          <select
+            name="ios_version"
+          >
+            <option value="">Choose one</option>
+            <option value="Not sure">Not sure</option>
+            <optgroup label="iOS 26">
+              <option value="iOS 26.5">iOS 26.5</option>
+              <option value="iOS 26.4">iOS 26.4</option>
+              <option value="iOS 26.3">iOS 26.3</option>
+              <option value="iOS 26.2">iOS 26.2</option>
+              <option value="iOS 26.1">iOS 26.1</option>
+              <option value="iOS 26.0">iOS 26.0</option>
+            </optgroup>
+            <optgroup label="iOS 18">
+              <option value="iOS 18.7">iOS 18.7</option>
+              <option value="iOS 18.6">iOS 18.6</option>
+              <option value="iOS 18.5">iOS 18.5</option>
+              <option value="iOS 18.4">iOS 18.4</option>
+              <option value="iOS 18.3">iOS 18.3</option>
+              <option value="iOS 18.2">iOS 18.2</option>
+              <option value="iOS 18.1">iOS 18.1</option>
+              <option value="iOS 18.0">iOS 18.0</option>
+            </optgroup>
+            <optgroup label="iOS 17">
+              <option value="iOS 17.7">iOS 17.7</option>
+              <option value="iOS 17.6">iOS 17.6</option>
+              <option value="iOS 17.5">iOS 17.5</option>
+              <option value="iOS 17.4">iOS 17.4</option>
+              <option value="iOS 17.3">iOS 17.3</option>
+              <option value="iOS 17.2">iOS 17.2</option>
+              <option value="iOS 17.1">iOS 17.1</option>
+              <option value="iOS 17.0">iOS 17.0</option>
+            </optgroup>
+            <option value="Other or beta iOS">Other or beta iOS</option>
+          </select>
+        </label>
+      </div>
+
+      <label class="support-trap" aria-hidden="true">
+        <span>Website</span>
+        <input
+          name="website"
+          type="text"
+          tabindex="-1"
+          autocomplete="off"
+        >
+      </label>
+
+      <p class="support-privacy">
+        Only the fields you submit are sent. The app does not attach your
+        cats, entries, check-ins, photos, or voice notes.
+      </p>
+
+      <button class="support-submit" type="submit">send to support</button>
+      <p class="support-status" id="support-status" aria-live="polite"></p>
+    </form>
+
+    <noscript>
+      <p class="panel">
+        JavaScript is required to send the support form. Open this page in a
+        browser with JavaScript enabled.
+      </p>
+    </noscript>
+
+    <p class="cta-row">
+      <a class="cta" href="/go/site-support/">Download on the App Store</a>
+      <span class="cta-note">Free. No ads, no tracking.</span>
+    </p>
+
+    <h2>Free access</h2>
+    <p>
+      Every feature is free. You can create cats, add check-ins,
+      attach photos, record voice notes, review patterns, export your data,
+      and rescue cats without a subscription or in-app purchase.
+    </p>
+
+    <h2>Photos and voice notes</h2>
+    <p>
+      The iOS photo picker lets you choose individual photos without
+      giving DearAnxiety access to your whole library. If microphone
+      permission was declined, open the iPhone Settings app, choose
+      DearAnxiety, and allow Microphone access.
+    </p>
+
+    <h2>Your local data</h2>
+    <p>
+      Settings in the app includes controls to export your local data or
+      delete it.
+    </p>
+
+    <h2>Urgent support</h2>
+    <p>
+      DearAnxiety does not provide medical, crisis, or emergency support.
+      Contact local emergency services or a qualified professional when
+      immediate help is needed.
+    </p>
+
+    <p><a href="/">Back to DearAnxiety</a></p>
+    <footer>DearAnxiety is developed and operated by Kunwoo Yoon. © 2026 Kunwoo Yoon.</footer>
+  </main>
+  <script src="/support.js" defer></script>
+</body>
+</html>
